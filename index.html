@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sidehustle anim sections</title>
+<style>
+/*TEMPORARY STYLES FOR LOCAL DEVELOPMENT*/
+    body {
+        background: #ccc;
+        color: #1a1a1a;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        line-height: 1.4;
+    }
+    #container-temp {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .section-anim {
+        margin: 150px 0;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+
+<link rel="stylesheet" href="animsections.css" />    
+    
+</head>
+<!--to test static layout (disables initial blank state of GSAP animations as set in CSS 
+<body class="no-js">
+-->
+    
+<body>
+
+<div id="container-temp">
+
+    <section class="section-anim section-anim-1">
+        <h2>Ideas on What to Sell</h2>
+        <ul class="sa1-bullets">
+            <li class="sa1-bullet">
+                <img src="images/icon-handmade.svg" class="sa1-bullet-icon" alt="Handmade" />
+                <h3 class="sa1-bullet-title">Handmade</h3>
+                <p class="sa1-bullet-desc">Make or manufacture.</p>
+            </li>
+            <li class="sa1-bullet">
+                <img src="images/icon-rare.svg" class="sa1-bullet-icon" alt="Rare/Antique" />
+                <h3 class="sa1-bullet-title">Rare/Antique</h3>
+                <p class="sa1-bullet-desc">Sell your old stuff and collections.</p>
+            </li>
+            <li class="sa1-bullet">
+                <img src="images/icon-wants.svg" class="sa1-bullet-icon" alt="Everybody Wants" />
+                <h3 class="sa1-bullet-title">Everybody Wants</h3>
+                <p class="sa1-bullet-desc">Identify search and buying trends on Google Insights.</p>
+            </li>
+            
+            <li class="sa1-bullet">
+                <img src="images/icon-drop.svg" class="sa1-bullet-icon" alt="Drop Shipping" />
+                <h3 class="sa1-bullet-title">Drop Shipping</h3>
+                <p class="sa1-bullet-desc">Drop ship products to reduce overhead and capital cost.</p>
+            </li>
+            <li class="sa1-bullet">
+                <img src="images/icon-solves.svg" class="sa1-bullet-icon" alt="Solves a Problem" />
+                <h3 class="sa1-bullet-title">Solves a Problem</h3>
+                <p class="sa1-bullet-desc">Invent something.</p>
+            </li>
+            <li class="sa1-bullet">
+                <img src="images/icon-flip.svg" class="sa1-bullet-icon" alt="Flip Something" />
+                <h3 class="sa1-bullet-title">Flip Something</h3>
+                <p class="sa1-bullet-desc">Buy something (car, website, whatever) make it better, and sell it for profit.</p>
+            </li>
+        </ul>
+        
+        <div class="sa1-2col">
+            <div class="sa1-2col-col1">
+                <h2>Most Popular Shopping Categories Worldwide</h2>
+                <ul class="sa1-chart1">
+                    <li class="sa1-c1-item">
+                        <p class="sa1-c1-title">Fashion Products</p>
+                        <span class="sa1-c1-bar sa1-c1-bar-1"></span>
+                    </li>
+                    <li class="sa1-c1-item">
+                        <p class="sa1-c1-title">Travel Products/Services</p>
+                        <span class="sa1-c1-bar sa1-c1-bar-2"></span>
+                    </li>
+                    <li class="sa1-c1-item">
+                        <p class="sa1-c1-title">Books and Music</p>
+                        <span class="sa1-c1-bar sa1-c1-bar-3"></span>
+                    </li>
+                    <li class="sa1-c1-item">
+                        <p class="sa1-c1-title">Computer/Mobile Devices</p>
+                        <span class="sa1-c1-bar sa1-c1-bar-4"></span>
+                    </li>
+                    <li class="sa1-c1-item">
+                        <p class="sa1-c1-title">Tickets/Events</p>
+                        <span class="sa1-c1-bar sa1-c1-bar-5"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sa1-2col-col2">
+                <h2>Growth of Ecommerce Sales Worldwide</h2>
+                <ul class="sa1-chart2">
+                    <li class="sa1-c2-item">
+                        <span class="sa1-c2-amount">$2,304</span>
+                        <span class="sa1-c2-bar sa1-c2-bar-1"></span>
+                        <span class="sa1-c2-date">2017</span>
+                    </li>
+                    <li class="sa1-c2-item">
+                        <span class="sa1-c2-amount">$2,842</span>
+                        <span class="sa1-c2-bar sa1-c2-bar-2"></span>
+                        <span class="sa1-c2-date">2018</span>
+                    </li>
+                    <li class="sa1-c2-item">
+                        <span class="sa1-c2-amount">$3,453</span>
+                        <span class="sa1-c2-bar sa1-c2-bar-3"></span>
+                        <span class="sa1-c2-date">2019</span>
+                    </li>
+                    <li class="sa1-c2-item">
+                        <span class="sa1-c2-amount">$4,135</span>
+                        <span class="sa1-c2-bar sa1-c2-bar-4"></span>
+                        <span class="sa1-c2-date">2020</span>
+                    </li>
+                    <li class="sa1-c2-item">
+                        <span class="sa1-c2-amount">$4,878</span>
+                        <span class="sa1-c2-bar sa1-c2-bar-5"></span>
+                        <span class="sa1-c2-date">2021</span>
+                    </li>
+                    <li class="sa1-c2-legend">Sales in billions</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Where to Sell Your Stuff</h2>
+        <ul class="sa1-logos">
+            <li><a href="https://www.amazon.com"><img src="images/logo-amazon.svg" alt="Amazon" class="sa1-logo-1" /></a></li>
+            <li><a href="https://www.craigslist.org"><img src="images/logo-craigslist.svg" alt="Craigslist" class="sa1-logo-2" /></a></li>
+            <li><a href="https://www.letgo.com"><img src="images/logo-letgo.svg" alt="LetGo" class="sa1-logo-3" /></a></li>
+            <li><a href="https://www.volusion.com"><img src="images/logo-volusion.svg" alt="Volusion" class="sa1-logo-4" /></a></li>
+            <li><a href="https://www.facebook.com"><img src="images/logo-facebook.svg" alt="Facebook" class="sa1-logo-5" /></a></li>
+            <li><a href="https://www.etsy.com"><img src="images/logo-etsy.svg" alt="Etsy" class="sa1-logo-6" /></a></li>
+        </ul>
+    </section>
+
+
+    <section class="section-anim section-anim-2">
+        <div class="sa2-row1">
+            <div class="sa2r1-col1">
+                <ul class="sa2r1-chart">
+                    <li class="sa2r1-chart-item sa2r1-chart-item-1">
+                        <img src="images/logotab-lyft.svg" alt="Lyft" />
+                    </li>
+                    <li class="sa2r1-chart-item sa2r1-chart-item-2">
+                        <img src="images/logotab-uber.svg" alt="Uber" />
+                    </li>
+                </ul>
+            </div>
+            <div class="sa2r1-col2">
+                <h3>There are <span class="sa2r1-color1">1,000,000 Uber drivers</span> and <span class="sa2r1-color2">700,000 Lyft drivers</span> in the U.S.
+                </h3>
+            </div>
+        
+        </div>
+        <div class="sa2-row2">
+            <div class="sa2r2-col1">
+                <div class="sa2r2-col1-col1">
+                    <svg id="infog-twothirds" data-name="infog-twothirds" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.51 176"><defs><style>.cls-1,.cls-2,.cls-5{fill:none;stroke-miterlimit:10;}.cls-1{stroke:#424242;stroke-width:8px;}.cls-2,.cls-5{stroke:#3535eb;}.cls-2{stroke-width:16px;}.cls-3{isolation:isolate;}.cls-4{fill:#fff;}.cls-5{stroke-linecap:square;stroke-width:2px;}</style></defs><title>infog-twothirds</title><circle class="cls-1" cx="85.5" cy="88" r="81.5"/><path id="infog-twothirds-bluepath" class="cls-2" d="M27.43,144.57A80,80,0,1,0,84,8" transform="translate(-0.5 0)"/><g class="cls-3"><g class="cls-3"><path class="cls-4" d="M85.86,78H62.8l.12-.25V71.83l10.21-8.62a20.83,20.83,0,0,0,2.52-2.43,3,3,0,0,0,.76-1.89,2.14,2.14,0,0,0-.57-1.56,2,2,0,0,0-1.53-.59q-2.57,0-2.82,3.36l-8.86-1.55A9,9,0,0,1,66,51.7a12.56,12.56,0,0,1,8.07-2.48,12.41,12.41,0,0,1,8.15,2.57A8.79,8.79,0,0,1,85.31,59,7.33,7.33,0,0,1,84,63.42a24.76,24.76,0,0,1-4.13,4.16l-3.16,2.61h9.12Z" transform="translate(-0.5 0)"/></g></g><g class="cls-3"><g class="cls-3"><path class="cls-4" d="M115.94,113.35a8.21,8.21,0,0,1-3.27,6.61,12.7,12.7,0,0,1-8.28,2.67,13,13,0,0,1-7.87-2.37,9.85,9.85,0,0,1-4-6.58l9-1.55a4.48,4.48,0,0,0,1.09,2.37,2.53,2.53,0,0,0,1.89.82,2.86,2.86,0,0,0,1.93-.61,2,2,0,0,0,.71-1.62,1.84,1.84,0,0,0-.84-1.59,3.81,3.81,0,0,0-2.22-.59h-3.19v-6.3h3a3.92,3.92,0,0,0,2.23-.57,1.72,1.72,0,0,0,.84-1.49,2,2,0,0,0-.72-1.62,2.9,2.9,0,0,0-1.93-.61c-1.68,0-2.65,1.17-2.9,3.49l-8.65-1.6a10,10,0,0,1,3.86-6.67,13.71,13.71,0,0,1,15.65.27,8,8,0,0,1,3.17,6.45,6.14,6.14,0,0,1-2.85,5.29A6.46,6.46,0,0,1,115.94,113.35Z" transform="translate(-0.5 0)"/></g></g><path class="cls-5" d="M118.5,56.5,64.37,110.63" transform="translate(-0.5 0)"/></svg>
+                </div>
+                <div class="sa2r2-col1-col2">
+                    <span>of Uber drivers do it part time.</span>
+                </div>
+            </div>
+            <div class="sa2r2-col2">
+                <div class="sa2r2-col2-col1">
+                    <img id="infog-speedo-main" src="images/infog-speedo-main.svg" alt="speedometer graphic" />
+                    <img id="infog-speedo-needle" src="images/infog-speedo-needle.svg" alt="speedometer graphic" />
+                    
+                </div>
+                <div class="sa2r2-col1-col2">
+                    Uber says its drivers make an average of <span class="sa2r2-col1-col2-color">$19 per hour,</span>
+                    <span class="sa2r2-col1-col2-small">although most side hustle drivers say the net pay comes out to $10-$15</span>
+                </div>
+            </div>
+        
+        </div>
+        <div class="sa2-row3">
+            <div class="sa2r3-col1">
+                (FPO: Risk Factor People vs graphic here?)
+            </div>
+            <div class="sa2r3-col2">
+                <h3>Delivery and Courier Service</h3>
+                <p><span>Not interested in driving people around?</span> You can make an income similar to ridesharing by delivering packages with AmazonFlex and UberEats.</p>
+            </div>        
+        </div>
+    
+    </section>
+
+    <section class="section-anim section-anim-3">
+        <h2 class="sa3-head-1">Make money from a hobby, a special skill, or any task that’s in high-demand.</h2>
+        <ul class="sa3-table">
+            <li class="sa3-t-item sa3-t-item-1">
+                <h4>Contractors</h4>
+                <span class="sa3-t-imgwrap">
+                    <img src="images/icon-contractors.svg" alt="Contractors" />
+                </span>
+                <ul class="sa3-t-sub">
+                    <li>Graphic Designer</li>
+                    <li>Writer/Editor</li>
+                    <li>Photographer</li>
+                    <li>Videographer</li>
+                    <li>Animator</li>
+                </ul>
+            </li>
+            <li class="sa3-t-item sa3-t-item-2">
+                <h4>Helpers</h4>
+                <span class="sa3-t-imgwrap">
+                    <img src="images/icon-helpers.svg" alt="Helpers" />
+                </span>
+                <ul class="sa3-t-sub">
+                    <li>Babysitting</li>
+                    <li>Doggie Care</li>
+                    <li>Cooking</li>
+                    <li>Tutoring</li>
+                    <li>Transcription</li>
+                </ul>
+            </li>
+            <li class="sa3-t-item sa3-t-item-3">
+                <h4>Consultants</h4>
+                <span class="sa3-t-imgwrap">
+                    <img src="images/icon-consultants.svg" alt="Consultants" />
+                </span>
+                <ul class="sa3-t-sub">
+                    <li>Social Media</li>
+                    <li>Fashion</li>
+                    <li>Design</li>
+                    <li>Software</li>
+                    <li>Business</li>
+                </ul>
+            </li>
+            <li class="sa3-t-item sa3-t-item-4">
+                <h4>Translators</h4>
+                <span class="sa3-t-imgwrap">
+                    <img src="images/icon-translators.svg" alt="Translators" />
+                </span>
+                <ul class="sa3-t-sub">
+                    <li>Translation Assistance</li>
+                    <li>Skype Tutor</li>
+                    <li>Textbook Editor</li>
+                    <li>Legal Translator</li>
+                    <li>Business Translation</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sa3-row2">
+            <div class="sa3-row2-col1">
+                <ul class="sa3-chart1">
+                    <li class="sa3-c1-item1"></li>
+                    <li class="sa3-c1-item2"></li>
+                    <li class="sa3-c1-item3"></li>
+                </ul>
+            </div>
+            <div class="sa3-row2-col2">
+                <p>The freelance workforce has grown <span>3x faster</span> than the U.S. workforce overall since 2014.</p>
+            </div>
+        </div>
+        <h2 class="sa3-head-2">Most Popular Ways People Find Freelance Work</h2>
+        <ul class="sa3-iconlist">
+            <li class="sa3-il-1">
+                <span><img src="images/icon-friendsfam.svg" alt="Friends + Family" /></span>
+                Friends + Family
+            </li>
+            <li class="sa3-il-2">
+                <span><img src="images/icon-freelance.svg" alt="Freelance Marketplaces" /></span>
+                Freelance Marketplaces
+            </li>
+            <li class="sa3-il-3">
+                <span><img src="images/icon-social.svg" alt="Social Media" /></span>
+                Social Media
+            </li>
+            <li class="sa3-il-4">
+                <span><img src="images/icon-prevfreelance.svg" alt="Previous Freelance" /></span>
+                Previous Freelance
+            </li>
+            <li class="sa3-il-5">
+                <span><img src="images/icon-onlineads.svg" alt="Online Ads" /></span>
+                Online Ads
+            </li>
+            <li class="sa3-il-6">
+                <span><img src="images/icon-onlinejob.svg" alt="Online Job Boards" /></span>
+                Online Job Boards
+            </li>
+            <li class="sa3-il-7">
+                <span><img src="images/icon-workcon.svg" alt="Work Contacts" /></span>
+                Work Contacts
+            </li>
+        </ul>
+    </section>
+
+    <section class="section-anim section-anim-4">
+        <div class="sa4-houses">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            <div class="sa4-houses-break">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>There were <em>660,000</em> Airbnb listings in the U.S. in 2017.</p>
+        </div>
+        <p class="sa4-houses-legend"><span></span>Each house represents 20,000 Homes listed.</p>
+        <div class="sa4-row2">
+            <div class="sa4-r2-col1">
+                <div id="sa4-pie">
+                    <div id="sa4-pie-slice"></div>
+                </div>
+                <p>Airbnb hosts make nearly three times the monthly income of Uber and Lyft drivers</p>
+            </div>
+            <div class="sa4-r2-col2">
+                <h3>Millennials and Gen Z are more likely to try Airbnb hosting, but <em>Baby Boomer hosts tend to make more</em></h3>
+                <p>Senior citizens are opening up their spare bedrooms to <em>“age in place”.</em></p>
+                <p>Millenials can rent out a spare room to <em>get the feel of living alone without the cost associated with it.</em></p>
+            </div>        
+        </div>
+    </section>
+
+    <section class="section-anim section-anim-5">
+        <div class="sa5-row1">
+            <div class="sa5-r1-col1">
+                <h2>The Most Lucrative Social Media Platforms</h2>
+                <p>YouTube has paid out more than <em>$2B</em> to unique content creators.</p>
+                <p>A YouTuber with <em>$1-3M</em> subscribers average <em>$125K</em> per sponsored post.</p>
+                <p>An Instagrammer with <em>$100K</em> followers can command <em>$5000</em> for a sponsored post.</p>
+            </div>
+            <div class="sa5-r1-col2">
+                <div class="sa5-chart">
+                    <div class="sa5-c-legend-vert">$Average Pricing for Influencer Posts</div>
+                    <ul class="sa5-c-units-vert">
+                        <li>$300K</li>
+                        <li>$250K</li>
+                        <li>$200K</li>
+                        <li>$150K</li>
+                        <li>$100K</li>
+                        <li>$50K</li>
+                        <li>$0</li>
+                    </ul>
+                    <ul class="sa5-c-main">
+                        <li class="sa5-c-col sa5-c-col1">
+                            <ul class="sa5-c-sub">
+                                <li class="sa5-c-yt"></li>
+                                <li class="sa5-c-fb"></li>
+                                <li class="sa5-c-sc"></li>
+                                <li class="sa5-c-in"></li>
+                                <li class="sa5-c-tw"></li>
+                            </ul>
+                        </li>
+                        <li class="sa5-c-col sa5-c-col2">
+                            <ul class="sa5-c-sub">
+                                <li class="sa5-c-yt"></li>
+                                <li class="sa5-c-fb"></li>
+                                <li class="sa5-c-sc"></li>
+                                <li class="sa5-c-in"></li>
+                                <li class="sa5-c-tw"></li>
+                            </ul>
+                        </li>
+                        <li class="sa5-c-col sa5-c-col3">
+                            <ul class="sa5-c-sub">
+                                <li class="sa5-c-yt"></li>
+                                <li class="sa5-c-fb"></li>
+                                <li class="sa5-c-sc"></li>
+                                <li class="sa5-c-in"></li>
+                                <li class="sa5-c-tw"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sa5-c-units-horz">
+                        <li>1-3 <br />Million</li>
+                        <li>3-7 <br />Million</li>
+                        <li>7+ <br />Million</li>
+                    </ul>
+                    <div class="sa5-c-legend-horz">Average # of Followers</div>
+                </div>
+            </div>        
+        </div>
+        <div class="sa5-row2">
+            <h2 class="sa5-head-2">How to Monetize</h2>
+            <ul class="sa5-iconlist">
+                <li class="sa5-il-1">
+                    <img src="images/icon-sponsor.svg" alt="Do sponsored posts" />
+                    <span>Do sponsored posts</span>
+                    
+                </li>
+                <li class="sa5-il-2">
+                    <img src="images/icon-brand.svg" alt="Become a brand ambassador" />
+                    <span>Become a brand ambassador</span>
+                </li>
+                <li class="sa5-il-3">
+                    <img src="images/icon-ads.svg" alt="Allow ads on your channel" />
+                    <span>Allow ads on your channel</span>
+                </li>
+                <li class="sa5-il-4">
+                    <img src="images/icon-affiliate.svg" alt="Become an affiliate marketer" />
+                    <span>Become an affiliate marketer</span>
+                </li>
+                <li class="sa5-il-5">
+                    <img src="images/icon-sell.svg" alt="Sell your content" />
+                    <span>Sell your content</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</div>
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    
+<script src="animsections.js"></script>
+</body>
+</html>
